@@ -71,3 +71,25 @@ Outcome:
 
 Implemented supervised machine learning algorithms, evaluated models using performance metrics, and optimized models using hyperparameter tuning techniques.
 
+## Week 4: Model Evaluation and Deployment
+
+Topics Covered:
+- Model Evaluation Metrics (Precision, Recall, AUC)
+- Bias-Variance Tradeoff
+- Regularization Techniques
+- Model Serialization using Pickle and Joblib
+- FastAPI Model Serving Endpoint
+- Sentiment Classifier Capstone Project
+
+Tools & Technologies Used:
+- Python
+- Google Colab
+- Scikit-learn
+- Pandas
+- NumPy
+- Joblib
+- Pickle
+- FastAPI
+
+Outcome:
+Learned how to evaluate machine learning models using different metrics, reduce overfitting using regularization techniques, save and load trained models using serialization methods, and understand how machine learning models can be deployed using FastAPI.
