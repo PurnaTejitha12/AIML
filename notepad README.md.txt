@@ -6,3 +6,4 @@ Completed NumPy fundamentals:
 - Vectorized operations
 - Matrix multiplication
 - Statistical analysis using CSV dataset
+Week 1 submission completed.
