@@ -93,3 +93,34 @@ Tools & Technologies Used:
 
 Outcome:
 Learned how to evaluate machine learning models using different metrics, reduce overfitting using regularization techniques, save and load trained models using serialization methods, and understand how machine learning models can be deployed using FastAPI.
+
+## Week 5: Running LLMs Locally with Ollama
+
+### W5D1: Ollama Setup & First Local LLM Inference
+
+Completed tasks:
+- Installed and configured Ollama for running Large Language Models locally.
+- Pulled and tested the llama3.2:3b model.
+- Ran first local inference using Ollama.
+- Built a Python script to interact with Ollama API.
+- Added custom system prompts for controlling model responses.
+- Tested multiple prompts using local LLM inference.
+- Compared response quality between llama3.2:3b and qwen2.5:3b models.
+
+### Tools & Technologies Used
+- Ollama
+- Python
+- VS Code
+- Requests Library
+- Local LLM Models (llama3.2:3b, qwen2.5:3b)
+
+### Key Learnings
+- Understanding how to run LLMs locally without cloud APIs.
+- Using Ollama API for programmatic model interaction.
+- Difference between local inference and cloud-based AI services.
+- Effect of model selection and prompts on response quality.
+
+### Deliverables
+- Python script for Ollama API inference
+- Model comparison documentation
+- Output evidence screenshots
