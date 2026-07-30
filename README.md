@@ -124,3 +124,21 @@ Completed tasks:
 - Python script for Ollama API inference
 - Model comparison documentation
 - Output evidence screenshots
+# Week 5 - Day 2: Prompt Engineering & System Prompts with Ollama
+
+## Tasks Completed
+- Installed Ollama
+- Pulled llama3.2:3b and qwen2.5:3b models
+- Built a Python script using the Ollama API with a custom system prompt
+- Tested five prompts
+- Compared llama3.2:3b and qwen2.5:3b responses
+- Documented model differences
+
+## Files
+- ollama_system_prompt.py
+- compare_models.py
+
+## Technologies Used
+- Python
+- Ollama
+- Requests Library
