@@ -142,3 +142,36 @@ Completed tasks:
 - Python
 - Ollama
 - Requests Library
+# ChromaDB Vector Store Setup & Ollama RAG
+
+## Overview
+Implemented ChromaDB vector store setup, document embeddings, similarity search, metadata filtering, and PDF retrieval with Ollama integration.
+
+## Tools Used
+- Python
+- ChromaDB
+- Ollama
+- Sentence Transformers
+- PyPDF
+
+## Implemented Tasks
+- Created ChromaDB collection
+- Added documents with embeddings
+- Performed similarity search
+- Applied metadata filtering
+- Embedded PDF documents
+- Retrieved top-3 relevant chunks
+- Passed retrieved context to Ollama LLM
+
+## Run
+
+Install dependencies:
+
+pip install chromadb sentence-transformers pypdf ollama
+
+Run:
+
+python ollama_rag.py
+
+## Result
+Successfully built a basic RAG pipeline using ChromaDB and Ollama.
