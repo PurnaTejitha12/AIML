@@ -175,3 +175,100 @@ python ollama_rag.py
 
 ## Result
 Successfully built a basic RAG pipeline using ChromaDB and Ollama.
+
+## Week 5
+
+# W5D4: Semantic Search with ChromaDB
+
+## Objective
+
+Implemented semantic search using ChromaDB by creating a vector store, generating embeddings, and retrieving relevant documents based on semantic similarity.
+
+## Work Done
+
+- Installed and configured ChromaDB.
+- Created ChromaDB collections for storing vector embeddings.
+- Used SentenceTransformer to generate document embeddings.
+- Added 20 documents with metadata into the vector database.
+- Implemented cosine similarity search to retrieve relevant documents.
+- Implemented metadata filtering for targeted document retrieval.
+- Verified search results manually.
+
+### PDF Embedding and Retrieval
+
+- Uploaded and processed PDF documents.
+- Extracted text using PyPDF.
+- Split documents into smaller chunks using text splitters.
+- Generated embeddings for PDF chunks.
+- Stored chunks in ChromaDB.
+- Retrieved the top-3 relevant chunks for user queries.
+
+### Workflow
+
+### Technologies Used
+
+- Python
+- Google Colab
+- ChromaDB
+- SentenceTransformers
+- PyPDF
+- LangChain Text Splitter
+- Git & GitHub
+
+
+---
+
+# W5D5: Local Q&A Bot — Ollama + ChromaDB
+
+## Objective
+
+Built a local question-answering chatbot by combining ChromaDB vector retrieval with Ollama local LLM inference using a Retrieval-Augmented Generation (RAG) pipeline.
+
+## Work Done
+
+- Created a knowledge base using PDF documents.
+- Extracted and processed document content.
+- Split documents into smaller chunks for efficient retrieval.
+- Generated embeddings using SentenceTransformer.
+- Stored document embeddings in ChromaDB.
+- Implemented semantic retrieval to find relevant context.
+- Retrieved top relevant chunks based on user questions.
+- Integrated retrieved context with Ollama for generating answers.
+
+### RAG Pipeline
+
+### Features Implemented
+
+- Semantic document search
+- Vector-based retrieval
+- PDF question answering
+- ChromaDB vector storage
+- Ollama local LLM integration
+- Context-based response generation
+
+### Technologies Used
+
+- Python
+- Ollama
+- ChromaDB
+- SentenceTransformers
+- LangChain
+- PyPDF
+- Google Colab
+- VS Code
+- Git & GitHub
+
+
+## Challenges Faced
+
+- Configuring Ollama with the local environment.
+- Understanding embedding generation and vector similarity search.
+- Improving retrieval quality through document chunking.
+- Testing local LLM responses with retrieved context.
+
+## Learning Outcomes
+
+- Learned how vector databases store and retrieve information.
+- Understood semantic similarity using embeddings.
+- Implemented a complete RAG workflow.
+- Learned how ChromaDB and Ollama can be combined to build local AI applications.
