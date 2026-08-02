@@ -272,3 +272,71 @@ Built a local question-answering chatbot by combining ChromaDB vector retrieval 
 - Understood semantic similarity using embeddings.
 - Implemented a complete RAG workflow.
 - Learned how ChromaDB and Ollama can be combined to build local AI applications.
+
+
+# Week 6 — LangChain Fundamentals & RAG
+
+## Overview
+Implemented LangChain-based LLM applications using Ollama, ChromaDB, and Retrieval Augmented Generation (RAG). Completed practical tasks covering chains, memory, agents, vector databases, and document chatbots.
+
+## Technologies Used
+- Python
+- Google Colab
+- LangChain
+- Ollama (Llama 3.2)
+- ChromaDB
+- HuggingFace Embeddings
+- PyPDF
+
+## Tasks Completed
+
+### Day 1 — LangChain Chains & Prompts
+- Built PromptTemplate → Ollama LLM → OutputParser pipeline.
+- Tested the chain with multiple inputs.
+
+### Day 2 — Conversation Memory
+- Implemented ConversationBufferMemory.
+- Verified that conversation history is maintained across multiple interactions.
+
+### Day 3 — LangChain Agents & Tools
+- Created an agent with:
+  - Calculator tool
+  - Web search stub tool
+- Tested agent execution with different tasks.
+
+### Day 4 — ChromaDB Vector Store
+- Created vector collections.
+- Added documents and generated embeddings.
+- Performed similarity search and metadata filtering.
+
+### Day 5 — Document Chatbot using RAG
+- Built a PDF-based chatbot.
+- Loaded PDF documents.
+- Split documents into chunks.
+- Created embeddings.
+- Stored vectors in ChromaDB.
+- Retrieved relevant chunks and generated answers using Ollama.
+
+## Project Workflow
+
+PDF Document  
+↓  
+PDF Loader  
+↓  
+Text Chunking  
+↓  
+Embeddings Generation  
+↓  
+ChromaDB Vector Store  
+↓  
+Similarity Retrieval  
+↓  
+Ollama LLM Response
+
+## Notebook
+Week 6 implementation was completed using Google Colab:
+
+`Week6_LangChain.ipynb`
+
+## Git Branch
+`feat/aiml-W6-your-purnatejitha`
