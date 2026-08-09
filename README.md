@@ -340,3 +340,60 @@ Week 6 implementation was completed using Google Colab:
 
 ## Git Branch
 `feat/aiml-W6-your-purnatejitha`
+
+
+## Week 7 — RAG and Retrieval
+
+### Overview
+
+Week 7 focused on the fundamentals of Retrieval-Augmented Generation (RAG), document retrieval, indexing, and local LLM applications.
+
+### Topics Covered
+
+* **Day 1:** Haystack Pipeline Architecture
+* **Day 2:** Haystack Retrieval — BM25
+* **Day 3:** LlamaIndex — Document Indexing and Querying
+* **Day 4:** LlamaIndex + Ollama — Local RAG
+* **Day 5:** Multi-Document RAG System
+
+### Technologies Used
+
+* Python
+* Google Colab
+* Haystack
+* LlamaIndex
+* Ollama
+* Hugging Face Embeddings
+* BM25
+* Vector Search
+* RAG
+
+### Implementation
+
+All Week 7 implementations are included in a single Google Colab notebook.
+
+The notebook demonstrates:
+
+1. Creating and working with Haystack pipelines.
+2. Performing document retrieval using BM25.
+3. Creating document indexes with LlamaIndex.
+4. Using LlamaIndex with Ollama for local RAG.
+5. Building a simple multi-document RAG system.
+
+### Project Workflow
+
+```text
+Documents
+    ↓
+Document Indexing
+    ↓
+Retrieval
+    ↓
+Relevant Information
+    ↓
+Answer Generation
+```
+
+### Learning Outcome
+
+By completing Week 7, I gained a basic understanding of RAG architecture, document retrieval, vector indexing, Haystack pipelines, LlamaIndex, and local LLM-based RAG applications.
