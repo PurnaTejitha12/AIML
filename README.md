@@ -397,3 +397,44 @@ Answer Generation
 ### Learning Outcome
 
 By completing Week 7, I gained a basic understanding of RAG architecture, document retrieval, vector indexing, Haystack pipelines, LlamaIndex, and local LLM-based RAG applications.
+
+
+
+# Local AI Research Assistant
+
+A simple Retrieval Augmented Generation (RAG) application built using local AI models.
+
+## Features
+
+- Document retrieval
+- Sentence Transformer embeddings
+- Top-K retrieval
+- Local FLAN-T5 answer generation
+- Grounded answers
+- FastAPI API
+- Docker support
+- Basic RAG evaluation
+- Automated API testing
+
+## Technologies
+
+- Python
+- Sentence Transformers
+- Hugging Face Transformers
+- FLAN-T5
+- FastAPI
+- Docker
+- Pytest
+- Google Colab
+
+## Project Structure
+
+```text
+local-ai-research-assistant/
+│
+├── app.py
+├── requirements.txt
+├── Dockerfile
+├── README.md
+├── .gitignore
+└── local-ai-research-assistant.ipynb
