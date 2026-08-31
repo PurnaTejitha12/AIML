@@ -438,3 +438,99 @@ local-ai-research-assistant/
 ├── README.md
 ├── .gitignore
 └── local-ai-research-assistant.ipynb
+
+
+## Week 9 — AI/ML 3M Stack Practical
+
+### Overview
+
+Week 9 focused on building multi-agent AI workflows using the approved AI/ML 3M stack:
+
+- CrewAI
+- LangChain / LangGraph concepts
+- MLflow concepts
+- Ragas concepts
+- MLOps concepts
+
+The practical work was completed in a single Google Colab notebook and committed to Git day-wise.
+
+### Notebook
+
+`Week 9/W9_AIML_CrewAI_5Day_Practical.ipynb`
+
+Additional notebook versions were saved day-wise during development.
+
+---
+
+## Day 1 — CrewAI Fundamentals
+
+### Topics
+
+- CrewAI Agents
+- CrewAI Tasks
+- CrewAI Crews
+- Sequential agent workflow
+- Researcher, Writer, and Reviewer agents
+
+### Work Completed
+
+Created three CrewAI agents:
+
+1. **Researcher** — collects and organizes research information.
+2. **Writer** — converts research findings into a structured article.
+3. **Reviewer** — checks the article for clarity, completeness, and quality.
+
+Created tasks for each agent and executed them as a sequential crew.
+
+### Git Commit
+
+`feat: crewai — define multi-agent research crew`
+
+---
+
+## Day 2 — CrewAI Tools
+
+### Topics
+
+- Web search
+- Code execution
+- CrewAI tools
+- No-API-key workflow
+
+### Work Completed
+
+Added a simple web-search workflow using the Wikipedia public API without requiring a paid API key.
+
+Added Python code execution for basic numerical analysis and demonstrated how CrewAI tools can be used by agents.
+
+### Git Commit
+
+`feat: crewai — add web search and code execution tools`
+
+---
+
+## Day 3 — Multi-Agent Research Pipeline
+
+### Topics
+
+- Multi-agent systems
+- Sequential pipelines
+- Task dependencies
+- Research → Writing → Review workflow
+
+### Work Completed
+
+Built a multi-agent research pipeline where:
+
+```text
+Researcher
+    ↓
+Research Task
+    ↓
+Writer
+    ↓
+Writing Task
+    ↓
+Reviewer
+    ↓
+Final Review
