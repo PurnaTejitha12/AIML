@@ -534,3 +534,39 @@ Writing Task
 Reviewer
     ↓
 Final Review
+
+## Week 10 — LangGraph
+
+### Day 1 — Stateful Agent Graphs
+
+**Topic:** LangGraph — Stateful Agent Graphs
+
+#### What I Built
+
+- Built a LangGraph workflow using `classify → route → respond` nodes.
+- Added conditional edges based on classification.
+- Tested the graph with 5 different inputs.
+- Verified that inputs were routed correctly.
+- Implemented human-in-the-loop using LangGraph `interrupt()`.
+- Tested graph pause, human feedback, and resume.
+- Used `MemorySaver` for checkpointing graph state.
+
+#### Graph Flow
+
+```text
+START
+  ↓
+classify
+  ↓
+route
+  ↓
+conditional routing
+  ├── technical
+  ├── billing
+  └── general
+        ↓
+   human_review
+        ↓
+     respond
+        ↓
+       END
