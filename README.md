@@ -570,3 +570,28 @@ conditional routing
      respond
         ↓
        END
+
+
+W10D2 — LangGraph State Machines & Conditional Edges
+
+Today I built a simple stateful agent workflow using LangGraph. The workflow follows three main steps: classify → route → respond. The input is first classified, then conditionally routed to the correct path, and finally a response is generated.
+
+I tested the workflow with multiple inputs to verify that the routing worked correctly. I also added a human-in-the-loop interrupt, which pauses the workflow, waits for human input, and then resumes execution.
+
+Technologies Used
+Python
+LangGraph
+LangChain
+Google Colab
+Git & GitHub
+What I Learned
+
+I learned how LangGraph manages state between nodes, how conditional edges control the flow of a graph, and how human-in-the-loop interrupts can be used to pause and resume an AI workflow.
+
+Workflow
+
+START → classify → route → respond → END
+
+For requests requiring human review:
+
+START → classify → route → human_review → END
