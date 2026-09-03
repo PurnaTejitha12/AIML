@@ -675,3 +675,25 @@ test: add routing and human-in-the-loop verification
 Result
 
 Successfully built and tested a stateful LangGraph agent with conditional routing and human-in-the-loop support.
+
+## W10D4 — Human-in-the-Loop with LangGraph
+
+### Today's Work
+
+- Built a stateful LangGraph workflow with classification and response routing.
+- Added conditional edges based on the classification result.
+- Tested the graph with 5 different inputs to verify correct routing.
+- Implemented Human-in-the-Loop using LangGraph `interrupt()`.
+- Tested pausing the workflow, receiving human input, and resuming execution.
+- Created Git commits and pushed the Day 4 implementation to the feature branch.
+
+### Technologies Used
+
+- Python
+- LangGraph
+- Git & GitHub
+
+### Git Commits
+
+- `feat: langgraph — stateful agent graph with routing`
+- `feat: add human-in-the-loop interrupt and resume`
