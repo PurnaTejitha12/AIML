@@ -595,3 +595,105 @@ START → classify → route → respond → END
 For requests requiring human review:
 
 START → classify → route → human_review → END
+
+LangGraph Stateful Agent with Routing
+Overview
+
+This project implements a simple stateful agent using LangGraph with three nodes:
+
+classify → route → respond
+
+The graph classifies the user's input, routes it based on the classification, and generates an appropriate response.
+
+Features
+3-node LangGraph workflow
+Conditional routing based on classification
+Billing, technical, and general request handling
+Human-in-the-loop interruption for uncertain requests
+Resume graph execution after human input
+Tested with 5 different inputs
+Routing verification using assertions
+Technologies Used
+Python
+LangGraph
+LangChain Core
+Google Colab
+Git
+GitHub
+Graph Flow
+START
+  |
+  v
+classify
+  |
+  v
+route
+  |
+  +---- billing ------+
+  |                   |
+  +---- technical ----+--> respond --> END
+  |                   |
+  +---- general ------+
+  |
+  +---- human_review --> interrupt --> human input --> respond
+
+Testing
+
+The graph was tested with inputs related to:
+
+Billing/refund
+Technical errors
+General queries
+Invoice/payment issues
+Uncertain requests requiring human review
+
+All expected routing tests passed successfully.
+
+Human-in-the-Loop
+
+For uncertain requests, the graph pauses using LangGraph's interrupt() function.
+
+A human provides the classification, and execution is resumed using:
+
+Command(resume="technical")
+
+
+This demonstrates stateful execution and human intervention in the workflow.
+
+Git
+
+Feature branch:
+
+feat/aiml-W10-your-name
+
+
+Commits:
+
+feat: langgraph — stateful agent graph with routing
+test: add routing and human-in-the-loop verification
+
+Result
+
+Successfully built and tested a stateful LangGraph agent with conditional routing and human-in-the-loop support.
+
+## W10D4 — Human-in-the-Loop with LangGraph
+
+### Today's Work
+
+- Built a stateful LangGraph workflow with classification and response routing.
+- Added conditional edges based on the classification result.
+- Tested the graph with 5 different inputs to verify correct routing.
+- Implemented Human-in-the-Loop using LangGraph `interrupt()`.
+- Tested pausing the workflow, receiving human input, and resuming execution.
+- Created Git commits and pushed the Day 4 implementation to the feature branch.
+
+### Technologies Used
+
+- Python
+- LangGraph
+- Git & GitHub
+
+### Git Commits
+
+- `feat: langgraph — stateful agent graph with routing`
+- `feat: add human-in-the-loop interrupt and resume`
