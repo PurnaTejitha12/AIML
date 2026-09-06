@@ -733,3 +733,142 @@ Agent: Rahul, I can help check the delivery status for order ORD12345.
 
 You: Can you check my order?
 Agent: Rahul, I can help check the delivery status for order ORD12345.
+
+# Week 11 – MLflow Experiment Tracking, Model Registry & RAG Evaluation
+
+## Project Overview
+
+Week 11 focused on machine learning experiment tracking, model versioning, model serving, and evaluation of Retrieval-Augmented Generation (RAG) pipelines.
+
+The project was implemented using Python and Google Colab. MLflow was used to track experiments, parameters, metrics, models, and evaluation artifacts. A machine learning model was registered and versioned, exposed through a REST API, and a RAG pipeline was built and evaluated.
+
+---
+
+# Day 1 – MLflow Experiment Tracking
+
+## W11D1: MLflow Experiment Tracking – Setup & Logging
+
+### Objective
+
+The objective of Day 1 was to understand and implement MLflow experiment tracking for a machine learning model.
+
+### Work Completed
+
+- Installed MLflow and required Python libraries.
+- Loaded the Iris classification dataset using Scikit-learn.
+- Split the dataset into training and testing sets.
+- Created an MLflow experiment named `W11_Iris_Classification`.
+- Built a Random Forest classification model.
+- Trained the model using the Iris dataset.
+- Generated predictions on the test dataset.
+- Calculated evaluation metrics including:
+  - Accuracy
+  - Precision
+  - Recall
+- Logged model parameters into MLflow.
+- Logged evaluation metrics into MLflow.
+- Logged the trained model as an MLflow artifact.
+- Verified the experiment and tracked runs.
+
+### Parameters Tracked
+
+The following parameters were logged:
+
+- Model type
+- Number of estimators
+- Maximum tree depth
+- Random state
+
+### Metrics Tracked
+
+- Accuracy
+- Precision
+- Recall
+
+### Technologies Used
+
+- Python
+- Google Colab
+- MLflow
+- Scikit-learn
+- Pandas
+
+### Outcome
+
+Successfully created an MLflow experiment and tracked a Random Forest model including its parameters, metrics, and model artifact.
+
+---
+
+# Day 2 – MLflow Model Registry & Versioning
+
+## W11D2: MLflow Model Registry & Versioning
+
+### Objective
+
+The objective of Day 2 was to understand model versioning and model lifecycle management using the MLflow Model Registry.
+
+### Work Completed
+
+- Trained multiple Random Forest model configurations.
+- Used different values for:
+  - Number of estimators
+  - Maximum tree depth
+- Logged each model as a separate MLflow run.
+- Compared the accuracy of the different model configurations.
+- Selected the best-performing model based on accuracy.
+- Registered the best model in the MLflow Model Registry.
+- Created a versioned model named `W11_Iris_RandomForest`.
+- Loaded the registered model using its model version.
+- Tested the registered model on the test dataset.
+
+### Model Comparison
+
+Multiple model configurations were tested and their performance was compared using MLflow metrics.
+
+The best-performing model was selected and registered for further use.
+
+### Technologies Used
+
+- Python
+- Google Colab
+- MLflow
+- Scikit-learn
+- Pandas
+
+### Outcome
+
+Successfully implemented MLflow Model Registry functionality and demonstrated model selection, registration, versioning, and loading of a registered model.
+
+---
+
+# Day 3 – MLflow Model Serving & REST API
+
+## W11D3: MLflow Model Serving & REST API
+
+### Objective
+
+The objective of Day 3 was to make the trained machine learning model accessible through an API.
+
+### Work Completed
+
+- Loaded the trained machine learning model.
+- Saved the model for serving.
+- Created a Flask-based REST API.
+- Implemented a root endpoint to verify that the API is running.
+- Implemented a `/predict` endpoint.
+- Configured the endpoint to accept feature values in JSON format.
+- Passed the received features to the trained model.
+- Generated a prediction.
+- Returned the prediction as a JSON response.
+- Tested the REST API using Python requests.
+
+### API Example
+
+Example input:
+
+```json
+{
+  "features": [5.1, 3.5, 1.4, 0.2]
+}
+
+
