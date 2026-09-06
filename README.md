@@ -697,3 +697,39 @@ Successfully built and tested a stateful LangGraph agent with conditional routin
 
 - `feat: langgraph — stateful agent graph with routing`
 - `feat: add human-in-the-loop interrupt and resume`
+
+
+# W10D5 – Stateful Customer Support Agent
+
+## Project Description
+
+Built a Stateful Customer Support Agent using Python that can remember information from previous conversations and provide context-aware responses.
+
+## Features
+
+- Maintains conversation history.
+- Remembers the customer's name.
+- Remembers the order number.
+- Detects common customer issues such as delivery, refund, damaged products, and cancellation.
+- Uses previous conversation context to generate relevant responses.
+- Provides an interactive chatbot interface.
+- Includes automated tests to verify conversation state and memory.
+
+## Technologies Used
+
+- Python
+- Google Colab
+- Regular Expressions
+- Dataclasses
+
+## Example Conversation
+
+```text
+You: Hi, my name is Rahul and my delivery is late
+Agent: Rahul, I can help with the delivery issue. Please provide your order number.
+
+You: My order number is ORD12345
+Agent: Rahul, I can help check the delivery status for order ORD12345.
+
+You: Can you check my order?
+Agent: Rahul, I can help check the delivery status for order ORD12345.
